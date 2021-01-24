@@ -94,6 +94,7 @@ export default {
       currentWeatherWindSpeed: "",
       currentHumidity: "",
       apiKey: process.env.VUE_APP_API_KEY,
+      googleApiKey: process.env.VUE_APP_GOOGLE_API_KEY,
       returnedIcon: "",
       city: "",
       // keys that correspond to the css classes for background images
@@ -152,7 +153,8 @@ export default {
             lat +
             "," +
             long +
-            "&key=AIzaSyDbDLtySKbZePECwNvxTaqzck57bN9NzA8"
+            "&key=" +
+            this.googleApiKey
         )
         .then((res) => {
           let citySplit = res.data.plus_code.compound_code.split(" ");
