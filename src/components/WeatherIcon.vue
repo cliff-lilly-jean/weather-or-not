@@ -26,6 +26,6 @@ export default {
   height: 300px;
   filter: drop-shadow(10px 15px 10px rgba(0, 0, 0, 0.4));
   margin-top: -3em;
-  margin-bottom: -4em;
+  /* margin-bottom: -4em; */
 }
 </style>
